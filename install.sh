@@ -17,7 +17,7 @@ git clone https://gitgud.io/xchange-life/xchange-life.git
 cd xchange-life
 npm install
 
-wget https://github.com/OnyxAU666/xcl-builder/blob/main/update.sh
+wget https://raw.githubusercontent.com/OnyxAU666/xcl-builder/refs/heads/main/update.sh
 
 echo ''
 echo 'Please run "./update.sh" any time you want to pull and rebuild'
