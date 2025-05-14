@@ -9,6 +9,7 @@ nvm install 22
 
 wget https://github.com/tmedwards/tweego/releases/download/v2.1.1/tweego-2.1.1-linux-x64.zip
 sudo 7z e tweego-2.1.1-linux-x64.zip tweego
+sudo rm -f ./tweego-2.1.1-linux-x64.zip
 sudo chmod +x ./tweego
 
 mkdir xcl-git
@@ -17,9 +18,13 @@ git clone https://gitgud.io/xchange-life/xchange-life.git
 cd xchange-life
 npm install
 
-cp tweego xcl-git/xchange-life
+sudo mv ./tweego ./xcl-git/xchange-life
 
 wget https://raw.githubusercontent.com/OnyxAU666/xcl-builder/refs/heads/main/update.sh
+sudo chmod +x ./update.sh
+
+curUser=${PWD##*/} 
+sudo chown -R $curUser:$curUser $HOME
 
 echo ''
 echo 'Please run "./update.sh" any time you want to pull and rebuild'
