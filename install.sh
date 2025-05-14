@@ -18,10 +18,12 @@ git clone https://gitgud.io/xchange-life/xchange-life.git
 cd xchange-life
 npm install
 
-sudo mv ./tweego ./xcl-git/xchange-life
-
 wget https://raw.githubusercontent.com/OnyxAU666/xcl-builder/refs/heads/main/update.sh
 sudo chmod +x ./update.sh
+
+cd
+
+sudo mv ./tweego ./xcl-git/xchange-life
 
 curUser=${PWD##*/} 
 sudo chown -R $curUser:$curUser $HOME
