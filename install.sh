@@ -17,6 +17,8 @@ git clone https://gitgud.io/xchange-life/xchange-life.git
 cd xchange-life
 npm install
 
+cp tweego xcl-git/xchange-life
+
 wget https://raw.githubusercontent.com/OnyxAU666/xcl-builder/refs/heads/main/update.sh
 
 echo ''
