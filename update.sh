@@ -6,13 +6,10 @@ git lfs pull
 mydate=$(date +'%B %d %Y')
 
 match='2025'
-insert=$match'\nCompiled '$mydate
+insert=$match'\nGit Build\nCompiled '$mydate
 file='project/twee/metadata.twee'
-subcheck='Subscriber Playtest'
-version='Git Build'
 
 sed -i "s/$match/$insert/" $file
-sed -i "s/$subcheck/$version/" $file
 
 tweego='tweego -o'
 
