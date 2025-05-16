@@ -10,6 +10,7 @@ insert=$match'\nGit Build\nCompiled '$mydate
 file='project/twee/metadata.twee'
 
 sed -i "s/$match/$insert/" $file
+sed -i "s/'Subscriber Playtest'/''/" $file
 
 tweego='tweego -o'
 
