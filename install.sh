@@ -21,17 +21,15 @@ npm install
 wget https://raw.githubusercontent.com/OnyxAU666/xcl-builder/refs/heads/main/update.sh
 sudo chmod +x ./update.sh
 
-cd
+cd $HOME
 
-sudo mv ./tweego ./xcl-git/xchange-life
+sudo mv ./tweego ./xcl-git/xchange-life/tweego
 
-curUser=${PWD##*/} 
-sudo chown -R $curUser:$curUser $HOME
+sudo chown -R ${PWD##*/}:${PWD##*/} $HOME
 
 echo ''
 echo 'Please run "./update.sh" any time you want to pull and rebuild'
-echo 'Do this from the xchange-life folder by typing "cd" to get to your home directory, if not already there'
-echo 'You can then type "cd xcl-git/xchange-life"'
+echo 'Do this from the xchange-life folder by typing "cd xcl-git/xchange-life"'
 echo ''
 echo 'Press the "any" key to continue'
 read
