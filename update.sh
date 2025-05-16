@@ -8,11 +8,13 @@ mydate=$(date +'%B %d %Y')
 match='2025'
 insert=$match'\nCompiled '$mydate
 file='project/twee/metadata.twee'
-updated='\nUpdated'
+version='Version '
+sub=' Subscriber Playtest'
+gitbuild='Git build for '
 
 sed -i "s/$match/$insert/" $file
-sed -i "s/' Subscriber Playtest'/''/" $file
-sed -i "s/$updated/' Git Build'$updated/" $file
+sed -i "s/$sub//" $file
+sed -i "s/$version/$gitbuild/" $file
 
 tweego='tweego -o'
 
